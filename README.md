@@ -19,10 +19,13 @@ gem install ruby-graphviz
 
 ## Usage
 ```
-ruby rmq-schema-visualizer.rb --format pdf --outpout schema.pdf rabbit_rabbitmq.local_2024-3-13.json
+ruby rmq-schema-visualizer.rb --order-first pipeline-in \
+                              --format pdf \
+                              --output schema.pdf \
+                              rabbit_rabbitmq.local_2024-3-13.json
 ```
 
-Grapviz supports a great variety of format including but not limited to:
+Grapviz supports a great variety of formats including but not limited to:
 * png
 * jpg
 * pdf
